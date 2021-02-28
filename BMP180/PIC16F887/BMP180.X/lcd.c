@@ -18,6 +18,7 @@
 #define DATA PORTD
 
 
+
 void lcd_init(void){
     RW = 0;
     RS = 0;

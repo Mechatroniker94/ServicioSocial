@@ -521,19 +521,42 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 171 ]
 }
 "79
-[; ;i2c.c: 79: void i2c_idle(){
+[; ;i2c.c: 79: void i2c_sendACK(){
+[v _i2c_sendACK `(v ~T0 @X0 1 ef ]
+{
+[e :U _i2c_sendACK ]
+[f ]
+"80
+[; ;i2c.c: 80:     SSPCON2bits.ACKDT = 0;
+[e = . . _SSPCON2bits 0 5 -> -> 0 `i `uc ]
+"81
+[; ;i2c.c: 81:     SSPCON2bits.ACKEN = 1;
+[e = . . _SSPCON2bits 0 4 -> -> 1 `i `uc ]
+"82
+[; ;i2c.c: 82:     while(SSPCON2bits.ACKEN == 1);
+[e $U 176  ]
+[e :U 177 ]
+[e :U 176 ]
+[e $ == -> . . _SSPCON2bits 0 4 `i -> 1 `i 177  ]
+[e :U 178 ]
+"83
+[; ;i2c.c: 83: }
+[e :UE 175 ]
+}
+"84
+[; ;i2c.c: 84: void i2c_idle(){
 [v _i2c_idle `(v ~T0 @X0 1 ef ]
 {
 [e :U _i2c_idle ]
 [f ]
-"80
-[; ;i2c.c: 80:     while((SSPCON2 & 0x1F)|| (SSPSTAT & 0x04));
-[e $U 176  ]
-[e :U 177 ]
-[e :U 176 ]
-[e $ || != & -> _SSPCON2 `i -> 31 `i -> 0 `i != & -> _SSPSTAT `i -> 4 `i -> 0 `i 177  ]
-[e :U 178 ]
-"81
-[; ;i2c.c: 81: }
-[e :UE 175 ]
+"85
+[; ;i2c.c: 85:     while((SSPCON2 & 0x1F)|| (SSPSTAT & 0x04));
+[e $U 180  ]
+[e :U 181 ]
+[e :U 180 ]
+[e $ || != & -> _SSPCON2 `i -> 31 `i -> 0 `i != & -> _SSPSTAT `i -> 4 `i -> 0 `i 181  ]
+[e :U 182 ]
+"86
+[; ;i2c.c: 86: }
+[e :UE 179 ]
 }

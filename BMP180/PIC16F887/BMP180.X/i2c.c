@@ -76,6 +76,11 @@ void i2c_sendNACK(){
     while(SSPCON2bits.ACKEN == 1);
 }
 
+void i2c_sendACK(){
+    SSPCON2bits.ACKDT = 0;
+    SSPCON2bits.ACKEN = 1;
+    while(SSPCON2bits.ACKEN == 1);
+}
 void i2c_idle(){
     while((SSPCON2 & 0x1F)|| (SSPSTAT & 0x04));
 }

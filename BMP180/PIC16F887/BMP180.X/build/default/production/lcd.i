@@ -2504,7 +2504,7 @@ void lcd_cmd(unsigned char);
 void lcd_write(unsigned char);
 void lcd_string(unsigned char *c);
 # 10 "lcd.c" 2
-# 21 "lcd.c"
+# 22 "lcd.c"
 void lcd_init(void){
     PORTBbits.RB1 = 0;
     PORTBbits.RB0 = 0;

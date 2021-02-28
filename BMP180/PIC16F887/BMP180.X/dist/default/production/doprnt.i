@@ -303,25 +303,34 @@ extern double round(double);
 
 #pragma warning disable 350
 # 358 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\sources\\c90\\common\\doprnt.c"
-const static unsigned int dpowers[] = {1, 10, 100, 1000, 10000,
+const static unsigned long dpowers[] = {1, 10, 100, 1000, 10000,
 
-
-
+       100000, 1000000, 10000000, 100000000,
+       1000000000
 
         };
 # 463 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\sources\\c90\\common\\doprnt.c"
 int
-# 505 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\sources\\c90\\common\\doprnt.c"
-sprintf(char * sp, const char * f, ...)
+
+
+
+
+
+
+
+_doprnt(struct __prbuf * pb, register const char * f, register va_list ap)
 {
- va_list ap;
-
-
-
-
+# 512 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\sources\\c90\\common\\doprnt.c"
  char c;
-# 521 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\sources\\c90\\common\\doprnt.c"
- signed char prec;
+
+
+
+
+ int prec;
+
+
+
+
 
 
 
@@ -332,12 +341,12 @@ sprintf(char * sp, const char * f, ...)
   double integ;
  } tmpval;
 
- unsigned int val;
+ unsigned long val;
  unsigned len;
  const char * cp;
 
 
- *ap = __va_start();
+
 
 
  while((c = *f++)) {
@@ -345,7 +354,7 @@ sprintf(char * sp, const char * f, ...)
   if(c != '%')
 
   {
-   ((*sp++ = (c)));
+   do { if(pb->func) (pb->func((char)(c))); else ((*pb->ptr++ = (char)(c))); } while(0);
    continue;
   }
 
@@ -353,11 +362,19 @@ sprintf(char * sp, const char * f, ...)
 
 
   flag = 0;
-# 661 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\sources\\c90\\common\\doprnt.c"
+# 659 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\sources\\c90\\common\\doprnt.c"
+loop:
+
   switch(c = *f++) {
 
   case 0:
    goto alldone;
+
+
+  case 'l':
+
+   flag |= 0x10;
+   goto loop;
 # 723 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\sources\\c90\\common\\doprnt.c"
   case 'd':
   case 'i':
@@ -371,13 +388,13 @@ sprintf(char * sp, const char * f, ...)
 # 1279 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\sources\\c90\\common\\doprnt.c"
   {
 
+   if(flag & 0x10)
+    val = (unsigned long)(*(long *)__va_arg((*(long **)ap), (long)0));
+   else
 
+    val = (unsigned long)(*(int *)__va_arg((*(int **)ap), (int)0));
 
-
-
-    val = (unsigned int)(*(int *)__va_arg((*(int **)ap), (int)0));
-
-   if((int)val < 0) {
+   if((long)val < 0) {
     flag |= 0x03;
     val = -val;
    }
@@ -391,7 +408,7 @@ sprintf(char * sp, const char * f, ...)
   {
 # 1464 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\sources\\c90\\common\\doprnt.c"
    if(flag & 0x03)
-    ((*sp++ = ('-')));
+    do { if(pb->func) (pb->func((char)('-'))); else ((*pb->ptr++ = (char)('-'))); } while(0);
 # 1495 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\sources\\c90\\common\\doprnt.c"
   }
 
@@ -404,10 +421,10 @@ sprintf(char * sp, const char * f, ...)
 
    {
 # 1515 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\sources\\c90\\common\\doprnt.c"
-    c = (val / dpowers[(unsigned char)prec]) % 10 + '0';
+    c = (val / dpowers[(unsigned int)prec]) % 10 + '0';
 # 1549 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\sources\\c90\\common\\doprnt.c"
    }
-   ((*sp++ = (c)));
+   do { if(pb->func) (pb->func((char)(c))); else ((*pb->ptr++ = (char)(c))); } while(0);
   }
 
 
@@ -421,7 +438,7 @@ sprintf(char * sp, const char * f, ...)
 alldone:
 
 
- *sp = 0;
+
 
  return 0;
 }

@@ -3,16 +3,34 @@
 [d edition pro ]
 [d chip 16F887 ]
 [d frameptr 0 ]
-"54 C:\Users\danny\Documents\ServicioSocial\BMP180\PIC16F887\BMP180.X\BMP180.c
+"11 C:\Users\danny\Documents\ServicioSocial\BMP180\PIC16F887\BMP180.X\BMP180.c
+[v _BMP180_init BMP180_init `(v  1 e 1 0 ]
+"36
+[v _BMP180_readTemperature BMP180_readTemperature `(l  1 e 4 0 ]
+"69
+[v _BMP180_readPreassure BMP180_readPreassure `(l  1 e 4 0 ]
+"148
 [v _BMP180_wait BMP180_wait `(v  1 e 1 0 ]
-"505 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\doprnt.c
-[v _sprintf sprintf `(i  1 e 2 0 ]
-"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
-[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
-"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
-[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"471 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\doprnt.c
+[v __doprnt _doprnt `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"13 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
+"13 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
 "6 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\pic\__eeprom.c
@@ -23,6 +41,8 @@
 [v _i2c_init i2c_init `(v  1 e 1 0 ]
 "23
 [v _i2c_start i2c_start `(v  1 e 1 0 ]
+"32
+[v _i2c_restart i2c_restart `(v  1 e 1 0 ]
 "40
 [v _i2c_stop i2c_stop `(v  1 e 1 0 ]
 "47
@@ -32,18 +52,29 @@
 "73
 [v _i2c_sendNACK i2c_sendNACK `(v  1 e 1 0 ]
 "79
+[v _i2c_sendACK i2c_sendACK `(v  1 e 1 0 ]
+"84
 [v _i2c_idle i2c_idle `(v  1 e 1 0 ]
-"21 C:\Users\danny\Documents\ServicioSocial\BMP180\PIC16F887\BMP180.X\lcd.c
+"22 C:\Users\danny\Documents\ServicioSocial\BMP180\PIC16F887\BMP180.X\lcd.c
 [v _lcd_init lcd_init `(v  1 e 1 0 ]
-"35
+"30
+[v _lcd_clear lcd_clear `(v  1 e 1 0 ]
+"36
 [v _lcd_cmd lcd_cmd `(v  1 e 1 0 ]
-"44
+"45
 [v _lcd_write lcd_write `(v  1 e 1 0 ]
-"52
+"53
 [v _lcd_string lcd_string `(v  1 e 1 0 ]
 "15 C:\Users\danny\Documents\ServicioSocial\BMP180\PIC16F887\BMP180.X\main.c
 [v _main main `(v  1 e 1 0 ]
-[s S250 . 1 `uc 1 RB0 1 0 :1:0 
+"11 C:\Users\danny\Documents\ServicioSocial\BMP180\PIC16F887\BMP180.X/BMP180.h
+[v _x1 x1 `l  1 e 4 0 ]
+[v _x2 x2 `l  1 e 4 0 ]
+[v _B5 B5 `l  1 e 4 0 ]
+[v _te te `l  1 e 4 0 ]
+"8 C:\Users\danny\Documents\ServicioSocial\BMP180\PIC16F887\BMP180.X\BMP180.c
+[v _dataEprom dataEprom `[11]l  1 e 44 0 ]
+[s S309 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
 `uc 1 RB2 1 0 :1:2 
 `uc 1 RB3 1 0 :1:3 
@@ -53,8 +84,8 @@
 `uc 1 RB7 1 0 :1:7 
 ]
 "245 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
-[u S259 . 1 `S250 1 . 1 0 ]
-[v _PORTBbits PORTBbits `VES259  1 e 1 @6 ]
+[u S318 . 1 `S309 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES318  1 e 1 @6 ]
 "352
 [v _PORTD PORTD `VEuc  1 e 1 @8 ]
 "843
@@ -63,7 +94,7 @@
 [v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
 "1478
 [v _TRISB TRISB `VEuc  1 e 1 @134 ]
-[s S48 . 1 `uc 1 TRISC0 1 0 :1:0 
+[s S76 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
 `uc 1 TRISC3 1 0 :1:3 
@@ -73,13 +104,13 @@
 `uc 1 TRISC7 1 0 :1:7 
 ]
 "1557
-[u S57 . 1 `S48 1 . 1 0 ]
-[v _TRISCbits TRISCbits `VES57  1 e 1 @135 ]
+[u S85 . 1 `S76 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES85  1 e 1 @135 ]
 "1602
 [v _TRISD TRISD `VEuc  1 e 1 @136 ]
 "1979
 [v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
-[s S77 . 1 `uc 1 SEN 1 0 :1:0 
+[s S105 . 1 `uc 1 SEN 1 0 :1:0 
 `uc 1 RSEN 1 0 :1:1 
 `uc 1 PEN 1 0 :1:2 
 `uc 1 RCEN 1 0 :1:3 
@@ -89,13 +120,13 @@
 `uc 1 GCEN 1 0 :1:7 
 ]
 "1996
-[u S86 . 1 `S77 1 . 1 0 ]
-[v _SSPCON2bits SSPCON2bits `VES86  1 e 1 @145 ]
+[u S114 . 1 `S105 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES114  1 e 1 @145 ]
 "2048
 [v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
 "2177
 [v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
-[s S99 . 1 `uc 1 BF 1 0 :1:0 
+[s S127 . 1 `uc 1 BF 1 0 :1:0 
 `uc 1 UA 1 0 :1:1 
 `uc 1 R_nW 1 0 :1:2 
 `uc 1 S 1 0 :1:3 
@@ -105,121 +136,300 @@
 `uc 1 SMP 1 0 :1:7 
 ]
 "2231
-[s S108 . 1 `uc 1 . 1 0 :2:0 
+[s S136 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D 1 0 :1:5 
 ]
-[s S113 . 1 `uc 1 . 1 0 :2:0 
+[s S141 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 I2C_READ 1 0 :1:2 
 `uc 1 I2C_START 1 0 :1:3 
 `uc 1 I2C_STOP 1 0 :1:4 
 `uc 1 I2C_DATA 1 0 :1:5 
 ]
-[s S119 . 1 `uc 1 . 1 0 :2:0 
+[s S147 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nW 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nA 1 0 :1:5 
 ]
-[s S124 . 1 `uc 1 . 1 0 :2:0 
+[s S152 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nWRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nADDRESS 1 0 :1:5 
 ]
-[s S129 . 1 `uc 1 . 1 0 :2:0 
+[s S157 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_W 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D_A 1 0 :1:5 
 ]
-[s S134 . 1 `uc 1 . 1 0 :2:0 
+[s S162 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 READ_WRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 DATA_ADDRESS 1 0 :1:5 
 ]
-[u S139 . 1 `S99 1 . 1 0 `S108 1 . 1 0 `S113 1 . 1 0 `S119 1 . 1 0 `S124 1 . 1 0 `S129 1 . 1 0 `S134 1 . 1 0 ]
-[v _SSPSTATbits SSPSTATbits `VES139  1 e 1 @148 ]
+[u S167 . 1 `S127 1 . 1 0 `S136 1 . 1 0 `S141 1 . 1 0 `S147 1 . 1 0 `S152 1 . 1 0 `S157 1 . 1 0 `S162 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES167  1 e 1 @148 ]
 "3449
 [v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
 "4277
 [v _SSPIF SSPIF `VEb  1 e 0 @99 ]
 "358 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\doprnt.c
-[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+[v _dpowers dpowers `DC[10]ul  1 s 40 dpowers ]
 "15 C:\Users\danny\Documents\ServicioSocial\BMP180\PIC16F887\BMP180.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"17
-[v main@buffer buffer `[20]uc  1 a 20 13 ]
-"48
+"16
+[v main@buffer buffer `[25]uc  1 a 25 47 ]
+"50
+[v main@press press `l  1 a 4 76 ]
+"49
+[v main@temperatura temperatura `l  1 a 4 72 ]
+"65
 } 0
-"505 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\doprnt.c
+"13 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprintf.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
 {
-[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
-"545
-[v sprintf@val val `ui  1 a 2 9 ]
-"512
-[v sprintf@c c `uc  1 a 1 12 ]
-"521
-[v sprintf@prec prec `c  1 a 1 8 ]
-"525
-[v sprintf@flag flag `uc  1 a 1 7 ]
-"507
-[v sprintf@ap ap `[1]*.4v  1 a 1 6 ]
-"505
-[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
-[v sprintf@f f `*.24DCuc  1 p 1 0 ]
-"550
-[v sprintf@sp sp `*.4uc  1 a 1 11 ]
-"1567
+[v sprintf@wh wh `*.4uc  1 a 1 wreg ]
+[s S797 __prbuf 2 `*.4uc 1 ptr 1 0 `*.27(v 1 func 1 1 ]
+"29
+[v sprintf@pb pb `S797  1 a 2 33 ]
+"28
+[v sprintf@ap ap `[1]*.4v  1 a 1 32 ]
+"13
+[v sprintf@wh wh `*.4uc  1 a 1 wreg ]
+[v sprintf@f f `*.24DCuc  1 p 1 26 ]
+"31
+[v sprintf@wh wh `*.4uc  1 a 1 31 ]
+"38
 } 0
-"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
-[v ___lwmod __lwmod `(ui  1 e 2 0 ]
-{
-"10
-[v ___lwmod@counter counter `uc  1 a 1 11 ]
-"5
-[v ___lwmod@divisor divisor `ui  1 p 2 7 ]
-[v ___lwmod@dividend dividend `ui  1 p 2 9 ]
-"25
-} 0
-"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
-[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
-{
-"10
-[v ___lwdiv@quotient quotient `ui  1 a 2 4 ]
-"11
-[v ___lwdiv@counter counter `uc  1 a 1 6 ]
-"5
-[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
-[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
-"30
-} 0
-"52 C:\Users\danny\Documents\ServicioSocial\BMP180\PIC16F887\BMP180.X\lcd.c
+"53 C:\Users\danny\Documents\ServicioSocial\BMP180\PIC16F887\BMP180.X\lcd.c
 [v _lcd_string lcd_string `(v  1 e 1 0 ]
 {
 [v lcd_string@c c `*.4uc  1 a 1 wreg ]
 [v lcd_string@c c `*.4uc  1 a 1 wreg ]
 [v lcd_string@c c `*.4uc  1 a 1 2 ]
-"57
+"58
 } 0
-"44
+"45
 [v _lcd_write lcd_write `(v  1 e 1 0 ]
 {
 [v lcd_write@c c `uc  1 a 1 wreg ]
 [v lcd_write@c c `uc  1 a 1 wreg ]
 [v lcd_write@c c `uc  1 a 1 1 ]
-"50
+"51
 } 0
-"21
+"22
 [v _lcd_init lcd_init `(v  1 e 1 0 ]
 {
-"27
+"28
 } 0
-"35
+"30
+[v _lcd_clear lcd_clear `(v  1 e 1 0 ]
+{
+"33
+} 0
+"36
 [v _lcd_cmd lcd_cmd `(v  1 e 1 0 ]
 {
 [v lcd_cmd@c c `uc  1 a 1 wreg ]
 [v lcd_cmd@c c `uc  1 a 1 wreg ]
 [v lcd_cmd@c c `uc  1 a 1 2 ]
-"42
+"43
+} 0
+"36 C:\Users\danny\Documents\ServicioSocial\BMP180\PIC16F887\BMP180.X\BMP180.c
+[v _BMP180_readTemperature BMP180_readTemperature `(l  1 e 4 0 ]
+{
+"37
+[v BMP180_readTemperature@temp temp `[2]i  1 a 4 36 ]
+"59
+[v BMP180_readTemperature@T T `l  1 a 4 28 ]
+"67
+} 0
+"69
+[v _BMP180_readPreassure BMP180_readPreassure `(l  1 e 4 0 ]
+{
+"95
+[v BMP180_readPreassure@B6 B6 `l  1 a 4 43 ]
+[v BMP180_readPreassure@p p `l  1 a 4 39 ]
+[v BMP180_readPreassure@x1 x1 `l  1 a 4 35 ]
+[v BMP180_readPreassure@x2 x2 `l  1 a 4 31 ]
+[v BMP180_readPreassure@x3 x3 `l  1 a 4 27 ]
+"96
+[v BMP180_readPreassure@B7 B7 `ul  1 a 4 23 ]
+"95
+[v BMP180_readPreassure@B4 B4 `l  1 a 4 15 ]
+"70
+[v BMP180_readPreassure@p1 p1 `l  1 a 4 8 ]
+"98
+[v BMP180_readPreassure@pres pres `l  1 a 4 4 ]
+"95
+[v BMP180_readPreassure@B3 B3 `l  1 a 4 0 ]
+"71
+[v BMP180_readPreassure@p2 p2 `i  1 a 2 12 ]
+"72
+[v BMP180_readPreassure@p3 p3 `uc  1 a 1 14 ]
+"146
+} 0
+"13 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+[v printf@f f `*.24DCuc  1 a 1 wreg ]
+[s S797 __prbuf 2 `*.4uc 1 ptr 1 0 `*.27(v 1 func 1 1 ]
+"21
+[v printf@pb pb `S797  1 a 2 32 ]
+"15
+[v printf@ap ap `[1]*.4v  1 a 1 31 ]
+"13
+[v printf@f f `*.24DCuc  1 a 1 wreg ]
+"23
+[v printf@f f `*.24DCuc  1 a 1 30 ]
+"28
+} 0
+"471 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\doprnt.c
+[v __doprnt _doprnt `(i  1 e 2 0 ]
+{
+[s S797 __prbuf 2 `*.4uc 1 ptr 1 0 `*.27(v 1 func 1 1 ]
+[v __doprnt@pb pb `*.4S797  1 a 1 wreg ]
+"545
+[v __doprnt@val val `ul  1 a 4 20 ]
+"517
+[v __doprnt@prec prec `i  1 a 2 17 ]
+"512
+[v __doprnt@c c `uc  1 a 1 24 ]
+"525
+[v __doprnt@flag flag `uc  1 a 1 19 ]
+"471
+[v __doprnt@pb pb `*.4S797  1 a 1 wreg ]
+[v __doprnt@f f `*.24DCuc  1 p 1 10 ]
+[v __doprnt@ap ap `*.4*.4v  1 p 1 11 ]
+[v __doprnt@pb pb `*.4S797  1 a 1 25 ]
+"1567
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@c c `uc  1 p 1 0 ]
+"9
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"10
+[v ___llmod@counter counter `uc  1 a 1 9 ]
+"5
+[v ___llmod@divisor divisor `ul  1 p 4 0 ]
+[v ___llmod@dividend dividend `ul  1 p 4 4 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"30
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 9 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 0 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 4 ]
+"129
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 10 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 9 ]
+[v ___aldiv@counter counter `uc  1 a 1 8 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"41
+} 0
+"148 C:\Users\danny\Documents\ServicioSocial\BMP180\PIC16F887\BMP180.X\BMP180.c
+[v _BMP180_wait BMP180_wait `(v  1 e 1 0 ]
+{
+"150
+} 0
+"11
+[v _BMP180_init BMP180_init `(v  1 e 1 0 ]
+{
+"22
+[v BMP180_init@j j `i  1 a 2 11 ]
+"21
+[v BMP180_init@aux aux `[2]uc  1 a 2 7 ]
+"20
+[v BMP180_init@i i `i  1 a 2 9 ]
+"34
+} 0
+"55 C:\Users\danny\Documents\ServicioSocial\BMP180\PIC16F887\BMP180.X\i2c.c
+[v _i2c_write i2c_write `(uc  1 e 1 0 ]
+{
+[v i2c_write@dato dato `uc  1 a 1 wreg ]
+[v i2c_write@dato dato `uc  1 a 1 wreg ]
+[v i2c_write@dato dato `uc  1 a 1 0 ]
+"71
+} 0
+"40
+[v _i2c_stop i2c_stop `(v  1 e 1 0 ]
+{
+"45
+} 0
+"23
+[v _i2c_start i2c_start `(v  1 e 1 0 ]
+{
+"30
+} 0
+"73
+[v _i2c_sendNACK i2c_sendNACK `(v  1 e 1 0 ]
+{
+"77
+} 0
+"79
+[v _i2c_sendACK i2c_sendACK `(v  1 e 1 0 ]
+{
+"83
+} 0
+"32
+[v _i2c_restart i2c_restart `(v  1 e 1 0 ]
+{
+"38
+} 0
+"47
+[v _i2c_read i2c_read `(uc  1 e 1 0 ]
+{
+"53
+} 0
+"84
+[v _i2c_idle i2c_idle `(v  1 e 1 0 ]
+{
+"86
+} 0
+"13
+[v _i2c_init i2c_init `(v  1 e 1 0 ]
+{
+"21
 } 0

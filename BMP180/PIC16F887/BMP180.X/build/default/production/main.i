@@ -2604,6 +2604,7 @@ unsigned char i2c_read(void);
 unsigned char i2c_write(unsigned char dato);
 void i2c_idle(void);
 void i2c_sendNACK(void);
+void i2c_sendACK(void);
 # 10 "main.c" 2
 
 # 1 "./configuracion.h" 1
@@ -2631,11 +2632,16 @@ void i2c_sendNACK(void);
 
 # 1 "./BMP180.h" 1
 void BMP180_init(void);
-char BMP180_readTemperature(void);
-char BMP180_readPreassure(void);
+long BMP180_readTemperature(void);
+long BMP180_readPreassure(void);
 void BMP180_startTemperture(void);
 void BMP180_startPresure(void);
 void BMP180_wait(void);
+void i2c_coeficiente(void);
+
+
+
+long x1,x2,B5,te;
 # 12 "main.c" 2
 
 # 1 "./lcd.h" 1
@@ -2648,17 +2654,28 @@ void lcd_string(unsigned char *c);
 
 
 void main(void) {
-    char dato = 0x00;
-    char buffer[20];
+    char buffer[25];
     TRISD = 0x00;
     TRISB = 0x00;
     ANSELH = 0x00;
     lcd_init();
-# 42 "main.c"
-    sprintf(buffer,"dato = %d",dato);
-    lcd_string(buffer);
-
+    lcd_clear();
+# 48 "main.c"
+    BMP180_init();
+    long temperatura = 0;
+    long press = 0;
     while(1){
+
+        temperatura = BMP180_readTemperature();
+        sprintf(buffer,"T = %ld", temperatura);
+        lcd_string(buffer);
+        press = BMP180_readPreassure();
+        sprintf(buffer,"P = %ld", press);
+        lcd_string(buffer);
+        _delay((unsigned long)((1000)*(4000000/4000.0)));
+        lcd_clear();
+
+
 
     }
 }

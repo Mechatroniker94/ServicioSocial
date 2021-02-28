@@ -2499,6 +2499,7 @@ unsigned char i2c_read(void);
 unsigned char i2c_write(unsigned char dato);
 void i2c_idle(void);
 void i2c_sendNACK(void);
+void i2c_sendACK(void);
 # 3 "i2c.c" 2
 # 13 "i2c.c"
 void i2c_init(void){
@@ -2557,6 +2558,11 @@ void i2c_sendNACK(){
     while(SSPCON2bits.ACKEN == 1);
 }
 
+void i2c_sendACK(){
+    SSPCON2bits.ACKDT = 0;
+    SSPCON2bits.ACKEN = 1;
+    while(SSPCON2bits.ACKEN == 1);
+}
 void i2c_idle(){
     while((SSPCON2 & 0x1F)|| (SSPSTAT & 0x04));
 }
