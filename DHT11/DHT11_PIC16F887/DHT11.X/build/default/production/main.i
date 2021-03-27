@@ -2627,27 +2627,47 @@ void usart_TxStr(char *str);
 void recivedCMD(unsigned char *cmd);
 # 12 "main.c" 2
 
+# 1 "./timmer0.h" 1
+
+void timmer0_init(void);
+# 13 "main.c" 2
+
+# 1 "./oneWire.h" 1
+char DHT11_read(void);
+void DHT11_start(void);
+void slaveRespond(void);
+char DHT11_readByte(void);
+char *DHT11_readData(char *data);
+void drive_OW_low(void);
+void drive_OW_high(void);
+
+
+
+char measure[20];
+# 14 "main.c" 2
+
+
+
+
 
 void blink(void);
 
 void main(void) {
+
     TRISD = 0x00;
     usart_init(9600);
 
     while(1){
-        for(int i = 0; i < 255;i++){
-            blink();
-            usart_Tx('H');
-        }
-
+        DHT11_read();
+        _delay((unsigned long)((1000)*(8000000/4000.0)));
     }
     return;
 }
 
 void blink(void){
-    PORTDbits.RD0 = 1;
+    PORTDbits.RD7 = 1;
     _delay((unsigned long)((1000)*(8000000/4000.0)));
-    PORTDbits.RD0 = 0;
+    PORTDbits.RD7 = 0;
     _delay((unsigned long)((1000)*(8000000/4000.0)));
 
 }

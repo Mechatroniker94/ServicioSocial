@@ -6,12 +6,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1 ./usart.h
 [; ;./usart.h: 1: void usart_init(long BAUD);
 [v _usart_init `(v ~T0 @X0 0 ef1`l ]
-"14 main.c
-[; ;main.c: 14: void blink(void);
-[v _blink `(v ~T0 @X0 0 ef ]
-"2 ./usart.h
-[; ;./usart.h: 2: void usart_Tx(char send);
-[v _usart_Tx `(v ~T0 @X0 0 ef1`uc ]
+"1 ./oneWire.h
+[; ;./oneWire.h: 1: char DHT11_read(void);
+[v _DHT11_read `(uc ~T0 @X0 0 ef ]
+[v F1256 `(v ~T0 @X0 1 tf1`ul ]
+"92 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\pic.h
+[v __delay `JF1256 ~T0 @X0 0 e ]
+[p i __delay ]
 "358 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 358:     struct {
 [s S12 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -23,10 +24,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "369
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 369: extern volatile PORTDbits_t PORTDbits __attribute__((address(0x008)));
 [v _PORTDbits `VS11 ~T0 @X0 0 e@8 ]
-[v F1256 `(v ~T0 @X0 1 tf1`ul ]
-"92 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\pic.h
-[v __delay `JF1256 ~T0 @X0 0 e ]
-[p i __delay ]
 "54 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 54: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
@@ -285,77 +282,64 @@ Version 4.0 HI-TECH Software Intermediate Code
 [p x BOR4V = BOR40V ]
 "20
 [p x WRT = OFF ]
+"11 ./oneWire.h
+[; ;./oneWire.h: 11: char measure[20];
+[v _measure `uc ~T0 @X0 -> 20 `i e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"16 main.c
-[; ;main.c: 16: void main(void) {
+"21 main.c
+[; ;main.c: 21: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"17
-[; ;main.c: 17:     TRISD = 0x00;
+"23
+[; ;main.c: 23:     TRISD = 0x00;
 [e = _TRISD -> -> 0 `i `uc ]
-"18
-[; ;main.c: 18:     usart_init(9600);
+"24
+[; ;main.c: 24:     usart_init(9600);
 [e ( _usart_init (1 -> -> 9600 `i `l ]
-"20
-[; ;main.c: 20:     while(1){
+"26
+[; ;main.c: 26:     while(1){
 [e :U 141 ]
 {
-"21
-[; ;main.c: 21:         for(int i = 0; i < 255;i++){
-{
-[v _i `i ~T0 @X0 1 a ]
-[e = _i -> 0 `i ]
-[e $ < _i -> 255 `i 143  ]
-[e $U 144  ]
-[e :U 143 ]
-{
-"22
-[; ;main.c: 22:             blink();
-[e ( _blink ..  ]
-"23
-[; ;main.c: 23:             usart_Tx('H');
-[e ( _usart_Tx (1 -> -> 72 `ui `uc ]
-"24
-[; ;main.c: 24:         }
-}
-[e ++ _i -> 1 `i ]
-[e $ < _i -> 255 `i 143  ]
-[e :U 144 ]
-}
-"26
-[; ;main.c: 26:     }
+"27
+[; ;main.c: 27:         DHT11_read();
+[e ( _DHT11_read ..  ]
+"28
+[; ;main.c: 28:         _delay((unsigned long)((1000)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"29
+[; ;main.c: 29:     }
 }
 [e :U 140 ]
 [e $U 141  ]
 [e :U 142 ]
-"27
-[; ;main.c: 27:     return;
+"30
+[; ;main.c: 30:     return;
 [e $UE 139  ]
-"28
-[; ;main.c: 28: }
+"31
+[; ;main.c: 31: }
 [e :UE 139 ]
 }
-"30
-[; ;main.c: 30: void blink(void){
+"33
+[; ;main.c: 33: void blink(void){
 [v _blink `(v ~T0 @X0 1 ef ]
 {
 [e :U _blink ]
 [f ]
-"31
-[; ;main.c: 31:     PORTDbits.RD0 = 1;
-[e = . . _PORTDbits 0 0 -> -> 1 `i `uc ]
-"32
-[; ;main.c: 32:     _delay((unsigned long)((1000)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"33
-[; ;main.c: 33:     PORTDbits.RD0 = 0;
-[e = . . _PORTDbits 0 0 -> -> 0 `i `uc ]
 "34
-[; ;main.c: 34:     _delay((unsigned long)((1000)*(8000000/4000.0)));
+[; ;main.c: 34:     PORTDbits.RD7 = 1;
+[e = . . _PORTDbits 0 7 -> -> 1 `i `uc ]
+"35
+[; ;main.c: 35:     _delay((unsigned long)((1000)*(8000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
 "36
-[; ;main.c: 36: }
-[e :UE 146 ]
+[; ;main.c: 36:     PORTDbits.RD7 = 0;
+[e = . . _PORTDbits 0 7 -> -> 0 `i `uc ]
+"37
+[; ;main.c: 37:     _delay((unsigned long)((1000)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"39
+[; ;main.c: 39: }
+[e :UE 143 ]
 }

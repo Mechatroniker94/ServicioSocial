@@ -44,7 +44,7 @@ void usart_TxStr(char *str){
     while(*str != '\0'){
         usart_Tx(*str);
         str++;
-        __delay_ms(50);
+        //__delay_ms(50);
     }
 }
 

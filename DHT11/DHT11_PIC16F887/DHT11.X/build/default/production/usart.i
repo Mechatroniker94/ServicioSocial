@@ -2661,7 +2661,7 @@ void usart_TxStr(char *str){
     while(*str != '\0'){
         usart_Tx(*str);
         str++;
-        _delay((unsigned long)((50)*(8000000/4000.0)));
+
     }
 }
 
