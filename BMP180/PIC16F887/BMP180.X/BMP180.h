@@ -4,7 +4,7 @@ long BMP180_readPreassure(void);
 void BMP180_startTemperture(void);
 void BMP180_startPresure(void);
 void BMP180_wait(void);
-void i2c_coeficiente(void);
+void BMP180_coeficiente(void);
 
 // B5 es entero
 

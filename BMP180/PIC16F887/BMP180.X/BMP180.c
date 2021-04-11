@@ -149,12 +149,19 @@ void BMP180_wait(){
     __delay_ms(5);
 }
 
-/*void i2c_coeficiente(void){
-    char buf[20]; 
-    for(int i = 0; i < 11; i++){
-        sprintf(buf,"d = %d", dataEprom[i]);
-        lcd_string(buf);
-        __delay_ms(1000);
-        lcd_clear();
+void i2c_coeficiente(void){
+     for(int i = 0; i < 11;i++){
+        char aux[2];
+        for(int j = 0; j < 2;j++){
+            aux[j] = i2c_read();
+            if(i == 10 && j == 1){
+                i2c_sendNACK();
+                i2c_stop();
+            }
+            else{
+                i2c_sendACK();
+            }
+            dataEprom[i] = (aux[0] << 8)|(aux[1]);
+        }
     }
-}*/
+}
