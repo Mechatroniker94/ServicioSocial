@@ -13,7 +13,6 @@ char data[10] = "";
 
 void __interrupt() myISR(void){
     INTCONbits.GIE = 0;
-    usart_Tx('a');
     recivedCMD(data);
     token(data);
     if(strcmp(dir[0],"M1") == 0){
@@ -21,11 +20,12 @@ void __interrupt() myISR(void){
             if(*dir[2] == 'a'){
                 i2c_start();
                 i2c_write(0x31);
-                lectura = i2c_read();
+                lectura[0] = i2c_read();
                 i2c_sendACK();
-                lectura = i2c_read();
+                lectura[1] = i2c_read();
                 i2c_stop();
-                sprintf(data,"%d\n",lectura);
+                res = (int)((lectura[1] << 8) + (lectura[0])); 
+                sprintf(data,"%d\n", res);
                 usart_TxStr(data);
             }
             else{
@@ -39,9 +39,12 @@ void __interrupt() myISR(void){
         if(*dir[2] == 'a'){
                 i2c_start();
                 i2c_write(0x33);
-                lectura = i2c_read();
+                lectura[0] = i2c_read();
+                i2c_sendACK();
+                lectura[1] = i2c_read();
                 i2c_stop();
-                sprintf(data,"%d\n",lectura);
+                res = (int)(lectura[1] << 8)|(lectura[0]); 
+                sprintf(data,"%d\n", res);
                 usart_TxStr(data);
             }
             else{

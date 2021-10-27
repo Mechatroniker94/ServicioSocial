@@ -14,6 +14,8 @@ char *ptrCmd = NULL;
 void main(void) {
     ANSELH = 0x00;
     TRISB = 0xFF;       //Puerto B como entrada
+    TRISE = 0x00;
+    PORTE = 0x00;
     usart_init(9600);
     char entrada = 0;
     while(1){
@@ -33,7 +35,9 @@ void main(void) {
                 usart_TxStr("M1,P1,b\n");
                 break;
             case  4:         //uC 0 A
+                PORTE = 0x00;
                 usart_TxStr("M1,P1,a\n");
+                
                 break;
             case 5:         //uC 1 Led rojo
                 usart_TxStr("M1,P2,r\n");
@@ -45,7 +49,9 @@ void main(void) {
                 usart_TxStr("M1,P2,b\n");
                 break;
              case 8:         //uC 2 ADC
+                PORTE = 0x00;
                 usart_TxStr("M1,P2,a\n");
+                
                 break;
             case 9:        //uC 3 Led rojo
                usart_TxStr("M2,P1,r\n");
@@ -57,6 +63,7 @@ void main(void) {
                usart_TxStr("M2,P1,b\n");
                break;
             case 12:        //uC 3 ADC
+                PORTE = 0x01;
                usart_TxStr("M2,P1,a\n");
                break;
             case 13:        //uC 3 ADC
@@ -69,6 +76,7 @@ void main(void) {
                usart_TxStr("M2,P2,b\n");
                break;
             case 16:        //uC 3 ADC
+               PORTE = 0x01;
                usart_TxStr("M2,P2,a\n");
                break;
             case 17:        //uC 3 ADC
@@ -81,6 +89,7 @@ void main(void) {
                usart_TxStr("M3,P1,b\n");
                break;
             case 20:        //uC 3 ADC
+                PORTE = 0x02;
                usart_TxStr("M3,P1,a\n");
                break;
             case 21:        //uC 3 ADC
@@ -93,9 +102,7 @@ void main(void) {
                usart_TxStr("M3,P2,b\n");
                break;
             case 24:        //uC 3 ADC
-               usart_TxStr("M3,P2,b\n");
-               break;
-            case 25:        //uC 3 ADC
+               PORTE = 0x02;
                usart_TxStr("M3,P2,a\n");
                break;
             default:

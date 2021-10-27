@@ -8,3 +8,6 @@ void i2c_idle(void);
 void i2c_sendNACK(void);
 void i2c_sendACK(void);
 void i2c_Slave_Init(short address);
+
+char lectura[2];
+int res = 0;

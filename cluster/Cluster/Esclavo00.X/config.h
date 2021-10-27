@@ -27,6 +27,7 @@
 #include <string.h>
 #include "I2C.h"
 #include "adc.h"
+//#include "usart.h"
 
 #define _XTAL_FREQ 20000000
 

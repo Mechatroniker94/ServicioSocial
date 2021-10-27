@@ -6,6 +6,7 @@
                    projectFiles="true">
       <itemPath>../Esclavo00.X/config.h</itemPath>
       <itemPath>../Esclavo00.X/I2C.h</itemPath>
+      <itemPath>adc.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -16,6 +17,7 @@
                    projectFiles="true">
       <itemPath>../Esclavo00.X/i2c.c</itemPath>
       <itemPath>../Esclavo00.X/main.c</itemPath>
+      <itemPath>adc.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -25,6 +27,7 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>../Esclavo00.X</Elem>
+    <Elem>.</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -36,7 +39,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool></platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>2.31</languageToolchainVersion>
+        <languageToolchainVersion>2.20</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -61,6 +64,7 @@
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeUseCleanTarget>false</makeUseCleanTarget>
         <makeCustomizationPreStep></makeCustomizationPreStep>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
         <makeCustomizationPostStep></makeCustomizationPostStep>

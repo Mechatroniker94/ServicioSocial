@@ -54,20 +54,15 @@ void __interrupt() myISR(void){
           SSPCONbits.CKP = 1;
         }
         else if(!SSPSTATbits.D_nA && SSPSTATbits.R_nW){   //Leer en el esclavo
-          //z = SSPBUF;
-          adc = 355;
-          
-          BF = 0;                       //Envia el BYTE menos significativo
-          SSPBUF = (adc & 0xFF);
-          SSPCONbits.CKP = 1;
-          while(SSPSTATbits.BF);
-          BF = 0;                       //Envia el Byte mas significativo
-          SSPBUF = (adc >> 8) & 0xFF;
-          SSPCONbits.CKP = 1;
-          while(SSPSTATbits.BF);
-          
-          sprintf(data,"%d\n",adc);
-          
+            adc = adc_start();
+            BF = 0;                       //Envia el BYTE menos significativo
+            SSPBUF = (adc & 0xFF);
+            SSPCONbits.CKP = 1;
+            while(SSPSTATbits.BF);
+            BF = 0;                       //Envia el Byte mas significativo
+            SSPBUF = (adc >> 8) & 0xFF;
+            SSPCONbits.CKP = 1;
+            while(SSPSTATbits.BF);
         }
       }
     PIR1bits.SSPIF = 0;
@@ -80,8 +75,9 @@ void main(void) {
     PORTD = 0x00;
     TRISB = 0x00;
     PORTB = 0x00;
-    i2c_Slave_Init(0x30);
+    i2c_Slave_Init(0x32);
     adc_init();
+    //usart_init(9600);
     
     while(1){
         PORTBbits.RB0 = 1;
