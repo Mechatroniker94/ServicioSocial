@@ -1,0 +1,707 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\Esclavo2.X.production.o
+cinit CODE 0 15 15 15 2
+text1 CODE 0 304 304 4F 2
+text2 CODE 0 215 215 9D 2
+text3 CODE 0 5CF 5CF 9 2
+text4 CODE 0 59A 59A E 2
+text5 CODE 0 2A 2A 103 2
+text6 CODE 0 549 549 17 2
+text7 CODE 0 5C3 5C3 C 2
+text8 CODE 0 41C 41C 38 2
+text9 CODE 0 2B2 2B2 52 2
+text10 CODE 0 454 454 2F 2
+text11 CODE 0 483 483 2F 2
+text12 CODE 0 50A 50A 20 2
+text13 CODE 0 4B2 4B2 2E 2
+text14 CODE 0 12D 12D E8 2
+text15 CODE 0 3E2 3E2 3A 2
+text16 CODE 0 39E 39E 44 2
+text17 CODE 0 4E0 4E0 2A 2
+text18 CODE 0 5D8 5D8 8 2
+text19 CODE 0 574 574 13 2
+text20 CODE 0 5A8 5A8 E 2
+text21 CODE 0 587 587 13 2
+text22 CODE 0 560 560 14 2
+text23 CODE 0 5B6 5B6 D 2
+maintext CODE 0 353 353 4B 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 20 20 2B 1
+cstackBANK1 BANK1 1 A0 A0 3 1
+intentry CODE 0 4 4 E 2
+bssBANK0 BANK0 1 4B 4B F 1
+strings STRING 0 52A 52A 1F 2
+config CONFIG 4 2007 2007 2 2
+$C:\Users\danny\AppData\Local\Temp\sdac.o
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 12 12 3 2
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 5A-6F 1
+RAM A3-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 5A-6F 1
+BANK1 A3-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 5E0-1FFF 2
+ENTRY 3-3 2
+ENTRY 5E0-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 5E0-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 5E0-1FFF 2
+STRING 3-3 2
+STRING 5E0-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Esclavo2.X.production.o
+15 cinit CODE >892:C:\Users\danny\AppData\Local\Temp\sdac.s
+15 cinit CODE >895:C:\Users\danny\AppData\Local\Temp\sdac.s
+15 cinit CODE >915:C:\Users\danny\AppData\Local\Temp\sdac.s
+16 cinit CODE >916:C:\Users\danny\AppData\Local\Temp\sdac.s
+17 cinit CODE >917:C:\Users\danny\AppData\Local\Temp\sdac.s
+18 cinit CODE >918:C:\Users\danny\AppData\Local\Temp\sdac.s
+19 cinit CODE >919:C:\Users\danny\AppData\Local\Temp\sdac.s
+1A cinit CODE >920:C:\Users\danny\AppData\Local\Temp\sdac.s
+1B cinit CODE >921:C:\Users\danny\AppData\Local\Temp\sdac.s
+1C cinit CODE >922:C:\Users\danny\AppData\Local\Temp\sdac.s
+1D cinit CODE >923:C:\Users\danny\AppData\Local\Temp\sdac.s
+1E cinit CODE >924:C:\Users\danny\AppData\Local\Temp\sdac.s
+1F cinit CODE >925:C:\Users\danny\AppData\Local\Temp\sdac.s
+20 cinit CODE >926:C:\Users\danny\AppData\Local\Temp\sdac.s
+21 cinit CODE >927:C:\Users\danny\AppData\Local\Temp\sdac.s
+22 cinit CODE >928:C:\Users\danny\AppData\Local\Temp\sdac.s
+23 cinit CODE >929:C:\Users\danny\AppData\Local\Temp\sdac.s
+24 cinit CODE >930:C:\Users\danny\AppData\Local\Temp\sdac.s
+25 cinit CODE >931:C:\Users\danny\AppData\Local\Temp\sdac.s
+26 cinit CODE >937:C:\Users\danny\AppData\Local\Temp\sdac.s
+26 cinit CODE >939:C:\Users\danny\AppData\Local\Temp\sdac.s
+27 cinit CODE >940:C:\Users\danny\AppData\Local\Temp\sdac.s
+4 intentry CODE >14:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+5B6 text23 CODE >81:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+5B6 text23 CODE >82:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+5C2 text23 CODE >83:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+560 text22 CODE >44:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+560 text22 CODE >45:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+565 text22 CODE >46:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+568 text22 CODE >47:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+56C text22 CODE >48:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+570 text22 CODE >49:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+573 text22 CODE >50:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+587 text21 CODE >20:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+587 text21 CODE >22:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+58C text21 CODE >23:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+58F text21 CODE >24:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+593 text21 CODE >25:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+598 text21 CODE >26:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+599 text21 CODE >27:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+5A8 text20 CODE >37:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+5A8 text20 CODE >38:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+5AB text20 CODE >39:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+5AF text20 CODE >40:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+5B4 text20 CODE >41:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+5B5 text20 CODE >42:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+574 text19 CODE >52:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+575 text19 CODE >53:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+57A text19 CODE >54:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+57E text19 CODE >55:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+586 text19 CODE >68:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+5D8 text18 CODE >61:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+5D8 text18 CODE >62:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+5D8 text18 CODE >64:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+5DE text18 CODE >65:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+5DF text18 CODE >66:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+4E0 text17 CODE >48:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+4E1 text17 CODE >49:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+4E2 text17 CODE >52:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+4F0 text17 CODE >53:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+4F9 text17 CODE >54:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+4FD text17 CODE >55:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+509 text17 CODE >58:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+39E text16 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+39E text16 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+3A0 text16 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+3A6 text16 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+3A8 text16 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+3A9 text16 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+3B0 text16 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+3B4 text16 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+3B8 text16 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+3BF text16 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+3C9 text16 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+3CF text16 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+3D0 text16 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+3D7 text16 CODE >27:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+3DD text16 CODE >29:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+3E1 text16 CODE >30:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+3E2 text15 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+3E2 text15 CODE >12:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+3E8 text15 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+3EA text15 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+3EB text15 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+3F2 text15 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+3F6 text15 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+3FA text15 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+404 text15 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+40A text15 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+411 text15 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+417 text15 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+41B text15 CODE >25:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+12D text14 CODE >505:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+130 text14 CODE >550:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+134 text14 CODE >553:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+135 text14 CODE >555:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+13B text14 CODE >558:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+146 text14 CODE >559:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+147 text14 CODE >565:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+148 text14 CODE >848:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+165 text14 CODE >1285:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+171 text14 CODE >1287:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+175 text14 CODE >1288:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+179 text14 CODE >1289:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+17E text14 CODE >1331:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+180 text14 CODE >1332:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+19C text14 CODE >1333:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+1A6 text14 CODE >1464:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+1AC text14 CODE >1465:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+1B7 text14 CODE >1498:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+1BB text14 CODE >1500:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+1BC text14 CODE >1515:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+1EA text14 CODE >1550:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+1F5 text14 CODE >1500:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+1FE text14 CODE >553:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+210 text14 CODE >1564:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+214 text14 CODE >1567:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+4B2 text13 CODE >33:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strcmp.c
+4B3 text13 CODE >37:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strcmp.c
+4B4 text13 CODE >38:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strcmp.c
+4B8 text13 CODE >39:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strcmp.c
+4BC text13 CODE >37:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strcmp.c
+4DA text13 CODE >41:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strcmp.c
+4DF text13 CODE >42:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strcmp.c
+50A text12 CODE >4:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strchr.c
+50B text12 CODE >6:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strchr.c
+50B text12 CODE >7:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strchr.c
+517 text12 CODE >8:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strchr.c
+519 text12 CODE >9:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strchr.c
+528 text12 CODE >10:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strchr.c
+529 text12 CODE >11:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strchr.c
+483 text11 CODE >4:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strcspn.c
+484 text11 CODE >8:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strcspn.c
+486 text11 CODE >9:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strcspn.c
+487 text11 CODE >10:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strcspn.c
+48B text11 CODE >11:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strcspn.c
+491 text11 CODE >9:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strcspn.c
+4AD text11 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strcspn.c
+4B1 text11 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strcspn.c
+454 text10 CODE >4:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strspn.c
+455 text10 CODE >8:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strspn.c
+457 text10 CODE >9:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strspn.c
+458 text10 CODE >10:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strspn.c
+45C text10 CODE >11:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strspn.c
+462 text10 CODE >9:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strspn.c
+47E text10 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strspn.c
+482 text10 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strspn.c
+2B2 text9 CODE >8:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strtok.c
+2B3 text9 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strtok.c
+2B8 text9 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strtok.c
+2BE text9 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strtok.c
+2C3 text9 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strtok.c
+2C5 text9 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strtok.c
+2D3 text9 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strtok.c
+2DB text9 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strtok.c
+2E0 text9 CODE >25:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strtok.c
+2F1 text9 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strtok.c
+2F9 text9 CODE >27:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strtok.c
+301 text9 CODE >29:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strtok.c
+302 text9 CODE >30:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strtok.c
+303 text9 CODE >31:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strtok.c
+41C text8 CODE >68:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+41F text8 CODE >69:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+41F text8 CODE >70:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+421 text8 CODE >71:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+430 text8 CODE >72:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+431 text8 CODE >73:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+439 text8 CODE >74:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+448 text8 CODE >75:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+44E text8 CODE >72:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+453 text8 CODE >77:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+5C3 text7 CODE >24:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+5C4 text7 CODE >25:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+5C8 text7 CODE >26:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+5CE text7 CODE >27:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+549 text6 CODE >33:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+54A text6 CODE >34:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+54B text6 CODE >35:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+553 text6 CODE >36:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+557 text6 CODE >34:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+55F text6 CODE >39:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+2A text5 CODE >14:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+2A text5 CODE >15:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+2B text5 CODE >16:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+31 text5 CODE >17:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+37 text5 CODE >18:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+49 text5 CODE >19:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+5B text5 CODE >20:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+66 text5 CODE >21:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+6B text5 CODE >22:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+71 text5 CODE >23:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+7B text5 CODE >24:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+80 text5 CODE >25:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+93 text5 CODE >26:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+99 text5 CODE >27:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+9A text5 CODE >29:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+9F text5 CODE >30:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+A5 text5 CODE >31:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+B0 text5 CODE >32:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+B6 text5 CODE >35:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+C8 text5 CODE >36:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+D3 text5 CODE >37:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+D8 text5 CODE >38:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+DE text5 CODE >39:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+E8 text5 CODE >40:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+ED text5 CODE >41:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+100 text5 CODE >42:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+106 text5 CODE >43:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+107 text5 CODE >45:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+10C text5 CODE >46:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+112 text5 CODE >47:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+11E text5 CODE >52:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+121 text5 CODE >53:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+122 text5 CODE >54:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+59A text4 CODE >10:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+59A text4 CODE >12:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+59D text4 CODE >13:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+59E text4 CODE >14:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+5A0 text4 CODE >15:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+5A2 text4 CODE >16:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+5A3 text4 CODE >17:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+5A7 text4 CODE >18:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+5CF text3 CODE >41:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+5CF text3 CODE >42:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+5D2 text3 CODE >43:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+5D5 text3 CODE >44:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+5D6 text3 CODE >45:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+5D7 text3 CODE >46:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+215 text2 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+215 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+218 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+21C text2 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+227 text2 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+229 text2 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+229 text2 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+22D text2 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+238 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+23C text2 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+244 text2 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+24C text2 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+24E text2 CODE >25:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+24F text2 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+258 text2 CODE >27:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+25C text2 CODE >25:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+260 text2 CODE >30:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+269 text2 CODE >31:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+27B text2 CODE >32:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+289 text2 CODE >33:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+28A text2 CODE >35:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+293 text2 CODE >36:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+299 text2 CODE >38:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+29E text2 CODE >39:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+2A9 text2 CODE >40:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+2B1 text2 CODE >41:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+304 text1 CODE >4:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+304 text1 CODE >6:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+307 text1 CODE >7:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+308 text1 CODE >8:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+345 text1 CODE >13:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+348 text1 CODE >14:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+34B text1 CODE >15:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+34C text1 CODE >16:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+34D text1 CODE >17:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+350 text1 CODE >18:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+351 text1 CODE >19:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+352 text1 CODE >21:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+353 maintext CODE >56:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+353 maintext CODE >57:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+356 maintext CODE >58:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+359 maintext CODE >59:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+35C maintext CODE >60:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+35F maintext CODE >61:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+36C maintext CODE >62:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+371 maintext CODE >63:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+376 maintext CODE >66:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+379 maintext CODE >67:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+388 maintext CODE >69:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+38B maintext CODE >70:C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+___lwmod@counter 7D 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+__Hspace_0 5E0 0 ABS 0 - -
+__Hspace_1 A3 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_i2c_idle B6C 0 CODE 0 text23 dist/default/production\Esclavo2.X.production.o
+_i2c_init B34 0 CODE 0 text4 dist/default/production\Esclavo2.X.production.o
+_i2c_read AC0 0 CODE 0 text22 dist/default/production\Esclavo2.X.production.o
+_i2c_stop B50 0 CODE 0 text20 dist/default/production\Esclavo2.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\danny\AppData\Local\Temp\sdac.o
+_data 50 0 BANK0 1 bssBANK0 dist/default/production\Esclavo2.X.production.o
+_get1 BB0 0 CODE 0 text18 dist/default/production\Esclavo2.X.production.o
+_main 6A6 0 CODE 0 maintext dist/default/production\Esclavo2.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__size_of_usart_TxStr 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+start 24 0 CODE 0 init C:\Users\danny\AppData\Local\Temp\sdac.o
+__size_of___aldiv 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__end_of_i2c_idle B86 0 CODE 0 text23 dist/default/production\Esclavo2.X.production.o
+__end_of_i2c_init B50 0 CODE 0 text4 dist/default/production\Esclavo2.X.production.o
+__end_of_i2c_read AE8 0 CODE 0 text22 dist/default/production\Esclavo2.X.production.o
+__end_of_i2c_stop B6C 0 CODE 0 text20 dist/default/production\Esclavo2.X.production.o
+__size_of_usart_Interrupt 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__size_of_get1 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+intlevel0 0 0 ENTRY 0 functab C:\Users\danny\AppData\Local\Temp\sdac.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\danny\AppData\Local\Temp\sdac.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\danny\AppData\Local\Temp\sdac.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\danny\AppData\Local\Temp\sdac.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\danny\AppData\Local\Temp\sdac.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\danny\AppData\Local\Temp\sdac.o
+___aldiv@divisor 34 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+___aldiv@sign 3E 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_SSPCONbits 14 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_recivedCMD 9C0 0 CODE 0 text17 dist/default/production\Esclavo2.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__size_of_sprintf 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__end_of_i2c_start B34 0 CODE 0 text21 dist/default/production\Esclavo2.X.production.o
+__end_of_i2c_write B0E 0 CODE 0 text19 dist/default/production\Esclavo2.X.production.o
+_usart_init$1344 47 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+__size_of_i2c_start 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+___lwmod@divisor 78 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+__size_of_i2c_write 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__end_of___aldiv 564 0 CODE 0 text2 dist/default/production\Esclavo2.X.production.o
+__end_of___lwdiv 7C4 0 CODE 0 text16 dist/default/production\Esclavo2.X.production.o
+__end_of___lwmod 838 0 CODE 0 text15 dist/default/production\Esclavo2.X.production.o
+?_strcmp 70 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+?_strspn 73 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\danny\AppData\Local\Temp\sdac.o
+___stacklo 0 0 ABS 0 - C:\Users\danny\AppData\Local\Temp\sdac.o
+__size_of_strcspn 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_dpowers A60 0 STRING 0 strings dist/default/production\Esclavo2.X.production.o
+___lwdiv@quotient 75 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+token@cmd 24 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+token@tok 25 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+__size_of_myISR 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__size_of_token 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_i2c_start B0E 0 CODE 0 text21 dist/default/production\Esclavo2.X.production.o
+_i2c_write AE8 0 CODE 0 text19 dist/default/production\Esclavo2.X.production.o
+recivedCMD@i 73 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+recivedCMD@j 74 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+___lwmod@dividend 7A 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+start_initialization 2A 0 CODE 0 cinit dist/default/production\Esclavo2.X.production.o
+_TRISBbits 86 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_TRISCbits 87 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+___aldiv@quotient 3F 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+__end_of_recivedCMD A14 0 CODE 0 text17 dist/default/production\Esclavo2.X.production.o
+recivedCMD@cmd 72 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+__pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\Esclavo2.X.production.o
+_SSPADD 93 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_SSPBUF 13 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_SSPCON 14 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_TRISC3 43B 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_TRISC4 43C 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_usart_TxStr A92 0 CODE 0 text6 dist/default/production\Esclavo2.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\danny\AppData\Local\Temp\sdac.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 54 0 CODE 0 cinit -
+__end_of_strchr A54 0 CODE 0 text12 dist/default/production\Esclavo2.X.production.o
+__end_of_strcmp 9C0 0 CODE 0 text13 dist/default/production\Esclavo2.X.production.o
+__end_of_strspn 906 0 CODE 0 text10 dist/default/production\Esclavo2.X.production.o
+__end_of_strtok 608 0 CODE 0 text9 dist/default/production\Esclavo2.X.production.o
+__Hstack 0 0 STACK 2 stack -
+__stringbase A5E 0 STRING 0 strings dist/default/production\Esclavo2.X.production.o
+___lwdiv@counter 77 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+__end_of_sprintf 42A 0 CODE 0 text14 dist/default/production\Esclavo2.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 2A 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+_PORTBbits 6 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__end_of_strcspn 964 0 CODE 0 text11 dist/default/production\Esclavo2.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_usart_init 608 0 CODE 0 text1 dist/default/production\Esclavo2.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 24 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 24 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 5E0 0 ABS 0 - -
+__S1 A3 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_dir 4B 0 BANK0 1 bssBANK0 dist/default/production\Esclavo2.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__size_of_usart_Tx 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+sprintf@val 29 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+strcmp@s1 76 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+strcmp@s2 70 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+strcspn@i 77 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+__stringtab A54 0 STRING 0 strings dist/default/production\Esclavo2.X.production.o
+strcmp@r 75 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\danny\AppData\Local\Temp\sdac.o
+strspn@i 77 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+_lectura 4F 0 BANK0 1 bssBANK0 dist/default/production\Esclavo2.X.production.o
+usart_init@BAUD 43 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+_RCSTAbits 18 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_PIE1bits 8C 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__end_of_usart_init 6A6 0 CODE 0 text1 dist/default/production\Esclavo2.X.production.o
+sprintf@flag 27 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+sprintf@prec 28 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+__ptext10 8A8 0 CODE 0 text10 dist/default/production\Esclavo2.X.production.o
+__ptext11 906 0 CODE 0 text11 dist/default/production\Esclavo2.X.production.o
+__ptext12 A14 0 CODE 0 text12 dist/default/production\Esclavo2.X.production.o
+__ptext13 964 0 CODE 0 text13 dist/default/production\Esclavo2.X.production.o
+__ptext14 25A 0 CODE 0 text14 dist/default/production\Esclavo2.X.production.o
+__ptext15 7C4 0 CODE 0 text15 dist/default/production\Esclavo2.X.production.o
+__ptext16 73C 0 CODE 0 text16 dist/default/production\Esclavo2.X.production.o
+__ptext17 9C0 0 CODE 0 text17 dist/default/production\Esclavo2.X.production.o
+__ptext18 BB0 0 CODE 0 text18 dist/default/production\Esclavo2.X.production.o
+__ptext19 AE8 0 CODE 0 text19 dist/default/production\Esclavo2.X.production.o
+__ptext20 B50 0 CODE 0 text20 dist/default/production\Esclavo2.X.production.o
+__ptext21 B0E 0 CODE 0 text21 dist/default/production\Esclavo2.X.production.o
+__ptext22 AC0 0 CODE 0 text22 dist/default/production\Esclavo2.X.production.o
+__ptext23 B6C 0 CODE 0 text23 dist/default/production\Esclavo2.X.production.o
+___aldiv 42A 0 CODE 0 text2 dist/default/production\Esclavo2.X.production.o
+___lwdiv 73C 0 CODE 0 text16 dist/default/production\Esclavo2.X.production.o
+___lwmod 7C4 0 CODE 0 text15 dist/default/production\Esclavo2.X.production.o
+__pmaintext 6A6 0 CODE 0 maintext dist/default/production\Esclavo2.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+_usart_Tx B86 0 CODE 0 text7 dist/default/production\Esclavo2.X.production.o
+__size_of_recivedCMD 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+usart_TxStr@str 72 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+___lwdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+_strchr A14 0 CODE 0 text12 dist/default/production\Esclavo2.X.production.o
+_strcmp 964 0 CODE 0 text13 dist/default/production\Esclavo2.X.production.o
+_strspn 8A8 0 CODE 0 text10 dist/default/production\Esclavo2.X.production.o
+_strtok 564 0 CODE 0 text9 dist/default/production\Esclavo2.X.production.o
+__end_of_usart_Tx B9E 0 CODE 0 text7 dist/default/production\Esclavo2.X.production.o
+strspn@s1 79 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+strspn@s2 73 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+__end_of__stringtab A60 0 STRING 0 strings dist/default/production\Esclavo2.X.production.o
+strtok@s1 7D 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+strtok@s2 7A 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+strtok@sp 4E 0 BANK0 1 bssBANK0 dist/default/production\Esclavo2.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+_PIR1bits C 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__Lend_init 24 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 4C 0 CODE 0 cinit dist/default/production\Esclavo2.X.production.o
+__Hintentry 24 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+?___aldiv 34 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+i2c_write@dato 70 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+___lwdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+?___lwdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+?___lwmod 78 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+strchr@chr 70 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+strchr@ptr 72 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+__end_of_usart_Interrupt BB0 0 CODE 0 text3 dist/default/production\Esclavo2.X.production.o
+__size_of_strchr 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__size_of_strcmp 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__size_of_strspn 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__size_of_strtok 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_SSPCON2bits 91 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__ptext1 608 0 CODE 0 text1 dist/default/production\Esclavo2.X.production.o
+__ptext2 42A 0 CODE 0 text2 dist/default/production\Esclavo2.X.production.o
+__ptext3 B9E 0 CODE 0 text3 dist/default/production\Esclavo2.X.production.o
+__ptext4 B34 0 CODE 0 text4 dist/default/production\Esclavo2.X.production.o
+__ptext5 54 0 CODE 0 text5 dist/default/production\Esclavo2.X.production.o
+__ptext6 A92 0 CODE 0 text6 dist/default/production\Esclavo2.X.production.o
+__ptext7 B86 0 CODE 0 text7 dist/default/production\Esclavo2.X.production.o
+__ptext8 838 0 CODE 0 text8 dist/default/production\Esclavo2.X.production.o
+__ptext9 564 0 CODE 0 text9 dist/default/production\Esclavo2.X.production.o
+___aldiv@dividend 38 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+_sprintf 25A 0 CODE 0 text14 dist/default/production\Esclavo2.X.production.o
+__end_of_usart_TxStr AC0 0 CODE 0 text6 dist/default/production\Esclavo2.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+sprintf@ap 26 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+sprintf@sp 2B 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_strcspn 906 0 CODE 0 text11 dist/default/production\Esclavo2.X.production.o
+__end_of__initialization 4C 0 CODE 0 cinit dist/default/production\Esclavo2.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+usart_Tx@send 70 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+strcspn@s1 79 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+strcspn@s2 73 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+_usart_Interrupt B9E 0 CODE 0 text3 dist/default/production\Esclavo2.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+_TXSTAbits 98 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_SSPCON2 91 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_SSPSTAT 94 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__Hend_init 2A 0 CODE 0 end_init -
+___aldiv@counter 3D 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+sprintf@c 2C 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+sprintf@f 20 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+__end_of_get1 BC0 0 CODE 0 text18 dist/default/production\Esclavo2.X.production.o
+__end_of_main 73C 0 CODE 0 maintext dist/default/production\Esclavo2.X.production.o
+__size_of_usart_init 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__end_of_dpowers A74 0 STRING 0 strings dist/default/production\Esclavo2.X.production.o
+__size_of_i2c_idle 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__size_of_i2c_init 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__size_of_i2c_read 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__size_of_i2c_stop 0 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+?_sprintf 20 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_RCREG 1A 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__end_of_myISR 25A 0 CODE 0 text5 dist/default/production\Esclavo2.X.production.o
+_SPBRG 99 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_SSPIF 63 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+_TXREG 19 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__end_of_token 8A8 0 CODE 0 text8 dist/default/production\Esclavo2.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/production\Esclavo2.X.production.o
+_myISR 54 0 CODE 0 text5 dist/default/production\Esclavo2.X.production.o
+_token 838 0 CODE 0 text8 dist/default/production\Esclavo2.X.production.o
+_SSPSTATbits 94 0 ABS 0 - dist/default/production\Esclavo2.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\Esclavo2.X.production.o
+token@i 22 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo2.X.production.o
+?_strcspn 73 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo2.X.production.o
+__initialization 2A 0 CODE 0 cinit dist/default/production\Esclavo2.X.production.o
+__pbssBANK0 4B 0 BANK0 1 bssBANK0 dist/default/production\Esclavo2.X.production.o
+__pstrings A54 0 STRING 0 strings dist/default/production\Esclavo2.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text6 0 549 A92 97 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 3A 1
+cstackBANK1 1 A0 A0 3 1
+intentry 0 4 8 526 2
+reset_vec 0 0 0 3 2
+strings 0 52A A54 1F 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

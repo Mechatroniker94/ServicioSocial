@@ -2,12 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/danny/Documents/ServicioSocial/cluster/Maestro.X/main.c</file>
-            <file>file:/C:/Users/danny/Documents/ServicioSocial/cluster/Maestro.X/configuracion.h</file>
-            <file>file:/C:/Users/danny/Documents/ServicioSocial/cluster/Maestro.X/usart.c</file>
-            <file>file:/C:/Users/danny/Documents/ServicioSocial/cluster/Maestro.X/i2c.c</file>
-            <file>file:/C:/Users/danny/Documents/ServicioSocial/cluster/Maestro.X/I2C.h</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

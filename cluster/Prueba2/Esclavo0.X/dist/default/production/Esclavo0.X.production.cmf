@@ -32,7 +32,7 @@ intentry CODE 0 4 4 E 2
 bssBANK0 BANK0 1 49 49 5 1
 strings STRING 0 31C 31C 14 2
 config CONFIG 4 2007 2007 2 2
-$C:\Users\danny\AppData\Local\Temp\s924.o
+$C:\Users\danny\AppData\Local\Temp\sc8s.o
 reset_vec CODE 0 0 0 3 2
 end_init CODE 0 12 12 3 2
 config CONFIG 4 2007 2007 2 2
@@ -81,18 +81,18 @@ STRING 34C-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Esclavo0.X.production.o
-15 cinit CODE >673:C:\Users\danny\AppData\Local\Temp\s924.s
-15 cinit CODE >676:C:\Users\danny\AppData\Local\Temp\s924.s
-15 cinit CODE >690:C:\Users\danny\AppData\Local\Temp\s924.s
-16 cinit CODE >691:C:\Users\danny\AppData\Local\Temp\s924.s
-17 cinit CODE >692:C:\Users\danny\AppData\Local\Temp\s924.s
-18 cinit CODE >693:C:\Users\danny\AppData\Local\Temp\s924.s
-19 cinit CODE >694:C:\Users\danny\AppData\Local\Temp\s924.s
-1A cinit CODE >695:C:\Users\danny\AppData\Local\Temp\s924.s
-1B cinit CODE >696:C:\Users\danny\AppData\Local\Temp\s924.s
-1C cinit CODE >702:C:\Users\danny\AppData\Local\Temp\s924.s
-1C cinit CODE >704:C:\Users\danny\AppData\Local\Temp\s924.s
-1D cinit CODE >705:C:\Users\danny\AppData\Local\Temp\s924.s
+15 cinit CODE >673:C:\Users\danny\AppData\Local\Temp\sc8s.s
+15 cinit CODE >676:C:\Users\danny\AppData\Local\Temp\sc8s.s
+15 cinit CODE >690:C:\Users\danny\AppData\Local\Temp\sc8s.s
+16 cinit CODE >691:C:\Users\danny\AppData\Local\Temp\sc8s.s
+17 cinit CODE >692:C:\Users\danny\AppData\Local\Temp\sc8s.s
+18 cinit CODE >693:C:\Users\danny\AppData\Local\Temp\sc8s.s
+19 cinit CODE >694:C:\Users\danny\AppData\Local\Temp\sc8s.s
+1A cinit CODE >695:C:\Users\danny\AppData\Local\Temp\sc8s.s
+1B cinit CODE >696:C:\Users\danny\AppData\Local\Temp\sc8s.s
+1C cinit CODE >702:C:\Users\danny\AppData\Local\Temp\sc8s.s
+1C cinit CODE >704:C:\Users\danny\AppData\Local\Temp\sc8s.s
+1D cinit CODE >705:C:\Users\danny\AppData\Local\Temp\sc8s.s
 4 intentry CODE >13:C:\Users\danny\Documents\ServicioSocial\cluster\Prueba2\Esclavo0.X\main.c
 1FC text12 CODE >5:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
 1FC text12 CODE >13:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
@@ -254,24 +254,24 @@ __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 4010 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\danny\AppData\Local\Temp\s924.o
+___sp 0 0 STACK 2 stack C:\Users\danny\AppData\Local\Temp\sc8s.o
 _chra 49 0 BANK0 1 bssBANK0 dist/default/production\Esclavo0.X.production.o
 _main 4F4 0 CODE 0 maintext dist/default/production\Esclavo0.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Esclavo0.X.production.o
 __size_of_usart_TxStr 0 0 ABS 0 - dist/default/production\Esclavo0.X.production.o
-start 24 0 CODE 0 init C:\Users\danny\AppData\Local\Temp\s924.o
+start 24 0 CODE 0 init C:\Users\danny\AppData\Local\Temp\sc8s.o
 __size_of___aldiv 0 0 ABS 0 - dist/default/production\Esclavo0.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\Esclavo0.X.production.o
 __size_of___lwdiv 0 0 ABS 0 - dist/default/production\Esclavo0.X.production.o
 __size_of___lwmod 0 0 ABS 0 - dist/default/production\Esclavo0.X.production.o
 i1_usart_Tx 678 0 CODE 0 text9 dist/default/production\Esclavo0.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\danny\AppData\Local\Temp\s924.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\danny\AppData\Local\Temp\s924.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\danny\AppData\Local\Temp\s924.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\danny\AppData\Local\Temp\s924.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\danny\AppData\Local\Temp\s924.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\danny\AppData\Local\Temp\s924.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\danny\AppData\Local\Temp\sc8s.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\danny\AppData\Local\Temp\sc8s.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\danny\AppData\Local\Temp\sc8s.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\danny\AppData\Local\Temp\sc8s.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\danny\AppData\Local\Temp\sc8s.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\danny\AppData\Local\Temp\sc8s.o
 ___aldiv@divisor 32 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo0.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\Esclavo0.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
@@ -285,8 +285,8 @@ ___lwmod@divisor 77 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo0.X.p
 __end_of___aldiv 34A 0 CODE 0 text2 dist/default/production\Esclavo0.X.production.o
 __end_of___lwdiv 480 0 CODE 0 text12 dist/default/production\Esclavo0.X.production.o
 __end_of___lwmod 4F4 0 CODE 0 text11 dist/default/production\Esclavo0.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\danny\AppData\Local\Temp\s924.o
-___stacklo 0 0 ABS 0 - C:\Users\danny\AppData\Local\Temp\s924.o
+___stackhi 0 0 ABS 0 - C:\Users\danny\AppData\Local\Temp\sc8s.o
+___stacklo 0 0 ABS 0 - C:\Users\danny\AppData\Local\Temp\sc8s.o
 _dpowers 644 0 STRING 0 strings dist/default/production\Esclavo0.X.production.o
 ___lwdiv@quotient 74 0 COMMON 1 cstackCOMMON dist/default/production\Esclavo0.X.production.o
 __size_of_blink 0 0 ABS 0 - dist/default/production\Esclavo0.X.production.o
@@ -297,7 +297,7 @@ _TRISCbits 87 0 ABS 0 - dist/default/production\Esclavo0.X.production.o
 ___aldiv@quotient 3D 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo0.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo0.X.production.o
 _usart_TxStr 60A 0 CODE 0 text8 dist/default/production\Esclavo0.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\danny\AppData\Local\Temp\s924.o
+___int_sp 0 0 STACK 2 stack C:\Users\danny\AppData\Local\Temp\sc8s.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -353,7 +353,7 @@ __size_ofi1_usart_Tx 0 0 ABS 0 - dist/default/production\Esclavo0.X.production.o
 __end_of_ISR 58E 0 CODE 0 text5 dist/default/production\Esclavo0.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
 __stringtab 638 0 STRING 0 strings dist/default/production\Esclavo0.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\danny\AppData\Local\Temp\s924.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\danny\AppData\Local\Temp\sc8s.o
 __end_of_enviarDato 60A 0 CODE 0 text7 dist/default/production\Esclavo0.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 usart_init@BAUD 41 0 BANK0 1 cstackBANK0 dist/default/production\Esclavo0.X.production.o

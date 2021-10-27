@@ -1,0 +1,501 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"505 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strchr.c
+[v _strchr strchr `(*.24uc  1 e 1 0 ]
+"33 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strcmp.c
+[v _strcmp strcmp `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strcspn.c
+[v _strcspn strcspn `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strspn.c
+[v _strspn strspn `(ui  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strtok.c
+[v _strtok strtok `(*.4uc  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"10 C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+[v _i2c_init i2c_init `(v  1 e 1 0 ]
+"20
+[v _i2c_start i2c_start `(v  1 e 1 0 ]
+"37
+[v _i2c_stop i2c_stop `(v  1 e 1 0 ]
+"44
+[v _i2c_read i2c_read `(uc  1 e 1 0 ]
+"52
+[v _i2c_write i2c_write `(uc  1 e 1 0 ]
+"81
+[v _i2c_idle i2c_idle `(v  1 e 1 0 ]
+"14 C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+[v _myISR myISR `II(v  1 e 1 0 ]
+"56
+[v _main main `(v  1 e 1 0 ]
+"4 C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+[v _usart_init usart_init `(v  1 e 1 0 ]
+"24
+[v _usart_Tx usart_Tx `(v  1 e 1 0 ]
+"33
+[v _usart_TxStr usart_TxStr `(v  1 e 1 0 ]
+"41
+[v _usart_Interrupt usart_Interrupt `(v  1 e 1 0 ]
+"48
+[v _recivedCMD recivedCMD `(v  1 e 1 0 ]
+"61
+[v _get1 get1 `(uc  1 e 1 0 ]
+"68
+[v _token token `(v  1 e 1 0 ]
+"33 C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X/config.h
+[v _lectura lectura `uc  1 e 1 0 ]
+"13 C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X/usart.h
+[v _dir dir `[3]*.4uc  1 e 3 0 ]
+"228 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S429 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"245
+[u S438 . 1 `S429 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES438  1 e 1 @6 ]
+"352
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S210 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"482
+[s S219 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S224 . 1 `S210 1 . 1 0 `S219 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES224  1 e 1 @11 ]
+[s S242 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"553
+[u S250 . 1 `S242 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES250  1 e 1 @12 ]
+"843
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"850
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+[s S163 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"870
+[s S169 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S174 . 1 `S163 1 . 1 0 `S169 1 . 1 0 ]
+[v _SSPCONbits SSPCONbits `VES174  1 e 1 @20 ]
+[s S500 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"1068
+[s S509 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S513 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S516 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S519 . 1 `S500 1 . 1 0 `S509 1 . 1 0 `S513 1 . 1 0 `S516 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES519  1 e 1 @24 ]
+"1133
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1140
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1478
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+[s S189 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1495
+[u S198 . 1 `S189 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES198  1 e 1 @134 ]
+[s S22 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1557
+[u S31 . 1 `S22 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES31  1 e 1 @135 ]
+"1602
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+[s S261 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"1718
+[u S269 . 1 `S261 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES269  1 e 1 @140 ]
+"1979
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+[s S51 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"1996
+[u S60 . 1 `S51 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES60  1 e 1 @145 ]
+"2048
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"2177
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+[s S73 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"2231
+[s S82 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S87 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S93 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S98 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S103 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S108 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S113 . 1 `S73 1 . 1 0 `S82 1 . 1 0 `S87 1 . 1 0 `S93 1 . 1 0 `S98 1 . 1 0 `S103 1 . 1 0 `S108 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES113  1 e 1 @148 ]
+[s S544 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2582
+[s S553 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S557 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[u S560 . 1 `S544 1 . 1 0 `S553 1 . 1 0 `S557 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES560  1 e 1 @152 ]
+"2642
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"4277
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"4457
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"4460
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"358 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+"12 C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+[v _data data `[10]uc  1 e 10 0 ]
+"56
+[v _main main `(v  1 e 1 0 ]
+{
+"73
+} 0
+"4 C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+[v _usart_init usart_init `(v  1 e 1 0 ]
+{
+[v usart_init@BAUD BAUD `l  1 p 4 35 ]
+"21
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 31 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 30 ]
+[v ___aldiv@counter counter `uc  1 a 1 29 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 20 ]
+[v ___aldiv@dividend dividend `l  1 p 4 24 ]
+"41
+} 0
+"41 C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+[v _usart_Interrupt usart_Interrupt `(v  1 e 1 0 ]
+{
+"46
+} 0
+"10 C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+[v _i2c_init i2c_init `(v  1 e 1 0 ]
+{
+"18
+} 0
+"14 C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\main.c
+[v _myISR myISR `II(v  1 e 1 0 ]
+{
+"54
+} 0
+"33 C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+[v _usart_TxStr usart_TxStr `(v  1 e 1 0 ]
+{
+[v usart_TxStr@str str `*.4uc  1 a 1 wreg ]
+[v usart_TxStr@str str `*.4uc  1 a 1 wreg ]
+[v usart_TxStr@str str `*.4uc  1 a 1 2 ]
+"39
+} 0
+"24
+[v _usart_Tx usart_Tx `(v  1 e 1 0 ]
+{
+[v usart_Tx@send send `uc  1 a 1 wreg ]
+[v usart_Tx@send send `uc  1 a 1 wreg ]
+[v usart_Tx@send send `uc  1 a 1 0 ]
+"27
+} 0
+"68
+[v _token token `(v  1 e 1 0 ]
+{
+[v token@cmd cmd `*.4uc  1 a 1 wreg ]
+"70
+[v token@i i `i  1 a 2 2 ]
+"69
+[v token@tok tok `*.4uc  1 a 1 5 ]
+"68
+[v token@cmd cmd `*.4uc  1 a 1 wreg ]
+"70
+[v token@cmd cmd `*.4uc  1 a 1 4 ]
+"77
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strtok.c
+[v _strtok strtok `(*.4uc  1 e 1 0 ]
+{
+[v strtok@s1 s1 `*.4uc  1 a 1 wreg ]
+[v strtok@s1 s1 `*.4uc  1 a 1 wreg ]
+[v strtok@s2 s2 `*.24DCuc  1 p 1 10 ]
+"15
+[v strtok@sp sp `*.4uc  1 s 1 sp ]
+"18
+[v strtok@s1 s1 `*.4uc  1 a 1 13 ]
+"31
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strspn.c
+[v _strspn strspn `(ui  1 e 2 0 ]
+{
+[v strspn@s1 s1 `*.4DCuc  1 a 1 wreg ]
+"6
+[v strspn@i i `ui  1 a 2 7 ]
+"4
+[v strspn@s1 s1 `*.4DCuc  1 a 1 wreg ]
+[v strspn@s2 s2 `*.24DCuc  1 p 1 3 ]
+"8
+[v strspn@s1 s1 `*.4DCuc  1 a 1 9 ]
+"14
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strcspn.c
+[v _strcspn strcspn `(ui  1 e 2 0 ]
+{
+[v strcspn@s1 s1 `*.4DCuc  1 a 1 wreg ]
+"6
+[v strcspn@i i `ui  1 a 2 7 ]
+"4
+[v strcspn@s1 s1 `*.4DCuc  1 a 1 wreg ]
+[v strcspn@s2 s2 `*.24DCuc  1 p 1 3 ]
+"8
+[v strcspn@s1 s1 `*.4DCuc  1 a 1 9 ]
+"14
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strchr.c
+[v _strchr strchr `(*.24uc  1 e 1 0 ]
+{
+[v strchr@ptr ptr `*.24DCuc  1 a 1 wreg ]
+[v strchr@ptr ptr `*.24DCuc  1 a 1 wreg ]
+[v strchr@chr chr `i  1 p 2 0 ]
+[v strchr@ptr ptr `*.24DCuc  1 a 1 2 ]
+"11
+} 0
+"33 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strcmp.c
+[v _strcmp strcmp `(i  1 e 2 0 ]
+{
+[v strcmp@s1 s1 `*.4DCuc  1 a 1 wreg ]
+"35
+[v strcmp@r r `c  1 a 1 5 ]
+"33
+[v strcmp@s1 s1 `*.4DCuc  1 a 1 wreg ]
+[v strcmp@s2 s2 `*.24DCuc  1 p 1 0 ]
+[v strcmp@s1 s1 `*.4DCuc  1 a 1 6 ]
+"42
+} 0
+"505 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+"545
+[v sprintf@val val `ui  1 a 2 9 ]
+"512
+[v sprintf@c c `uc  1 a 1 12 ]
+"521
+[v sprintf@prec prec `c  1 a 1 8 ]
+"525
+[v sprintf@flag flag `uc  1 a 1 7 ]
+"507
+[v sprintf@ap ap `[1]*.4v  1 a 1 6 ]
+"505
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[v sprintf@f f `*.24DCuc  1 p 1 0 ]
+"550
+[v sprintf@sp sp `*.4uc  1 a 1 11 ]
+"1567
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"48 C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\usart.c
+[v _recivedCMD recivedCMD `(v  1 e 1 0 ]
+{
+[v recivedCMD@cmd cmd `*.4uc  1 a 1 wreg ]
+"50
+[v recivedCMD@j j `uc  1 a 1 4 ]
+"49
+[v recivedCMD@i i `uc  1 a 1 3 ]
+"48
+[v recivedCMD@cmd cmd `*.4uc  1 a 1 wreg ]
+[v recivedCMD@cmd cmd `*.4uc  1 a 1 2 ]
+"58
+} 0
+"61
+[v _get1 get1 `(uc  1 e 1 0 ]
+{
+"66
+} 0
+"52 C:\Users\danny\Desktop\ClusterSensor\Esclavo2.X\i2c.c
+[v _i2c_write i2c_write `(uc  1 e 1 0 ]
+{
+[v i2c_write@dato dato `uc  1 a 1 wreg ]
+[v i2c_write@dato dato `uc  1 a 1 wreg ]
+[v i2c_write@dato dato `uc  1 a 1 0 ]
+"68
+} 0
+"37
+[v _i2c_stop i2c_stop `(v  1 e 1 0 ]
+{
+"42
+} 0
+"20
+[v _i2c_start i2c_start `(v  1 e 1 0 ]
+{
+"27
+} 0
+"44
+[v _i2c_read i2c_read `(uc  1 e 1 0 ]
+{
+"50
+} 0
+"81
+[v _i2c_idle i2c_idle `(v  1 e 1 0 ]
+{
+"83
+} 0
